@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', async function(event) {
     let url = 'https://api.themoviedb.org/3/movie/now_playing?api_key=94ba867a0abf4afb5488edc0c120064e'
     let response = await fetch(url)
     let movies = await response.json()
-    // console.log(movies)
+    console.log(movies)
     
     let moviesPath = document.querySelector('.movies')
         moviesPath.insertAdjacentHTML('beforeend',`
